@@ -5,7 +5,7 @@ class Player(Base):
     __tablename__ = "players"
 
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
-    scraped_date = Column(Date, index=True)  # <-- added
+    scraped_date = Column(Date, index=True) 
     name = Column(String(255))
     position = Column(String(100))
     club = Column(String(255))
